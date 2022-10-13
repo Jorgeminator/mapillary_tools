@@ -22,8 +22,8 @@ else:
 from . import exif_write, types, upload_api_v4, utils
 
 
-MIN_CHUNK_SIZE = 1024 * 1024  # 1MB
-MAX_CHUNK_SIZE = 1024 * 1024 * 16  # 16MB
+MIN_CHUNK_SIZE = 1024 * 1024 * 16  # 16MB
+MAX_CHUNK_SIZE = 1024 * 1024 * 32  # 32MB
 LOG = logging.getLogger(__name__)
 
 
