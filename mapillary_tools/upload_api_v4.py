@@ -15,7 +15,7 @@ from .api_v4 import MAPILLARY_GRAPH_API_ENDPOINT
 MAPILLARY_UPLOAD_ENDPOINT = os.getenv(
     "MAPILLARY_UPLOAD_ENDPOINT", "https://rupload.facebook.com/mapillary_public_uploads"
 )
-DEFAULT_CHUNK_SIZE = 1024 * 1024 * 16
+DEFAULT_CHUNK_SIZE = 1024 * 1024 * 32
 REQUESTS_TIMEOUT = 60  # 1 minutes
 # According to the docs, UPLOAD_REQUESTS_TIMEOUT sets both the "connection timeout"
 # and "read timeout": https://docs.python-requests.org/en/latest/user/advanced/#timeouts
